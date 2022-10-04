@@ -1,0 +1,8 @@
+import os
+from shutil import copyfile
+with open('a.xml', 'w') as a:
+    a.write("colorPrimary\ncolorPrimaryAlpha\ncolorPrimaryDark\ncolorAccent")
+copyfile('a.xml', 'b.xml')
+with open('b.xml', 'w') as b:
+    b.write('A2A2A2\ncolorPrimaryAlpha\ncolorPrimaryDark\ncolorAccent')
+copyfile('b.xml', 'a.xml')
